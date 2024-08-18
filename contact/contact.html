@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "1sSZnGc9xmdr1V7Br",
+      });
+   })();
+</script>
+</head>
+<body>
+  <div id="preloader"></div>
+
+
+
+    <nav class="navbar navbar-expand-lg sticky-top ">
+        <div class="container">
+          <h2 class="logo"><span class="text-logo"></span></h2>
+            
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+           data-bs-target="#main" aria-controls="main" 
+           aria-expanded="false" aria-label="Toggle navigation">
+           <i class="hero fa-solid fa-bars"  onclick="toggleIcon()" id="toggleButton" ></i>
+          </button>
+          <div class="collapse navbar-collapse   " id="main">
+            <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3      active" aria-current="page" href="https://mohsen0321.github.io/Mohsen-Khaled/#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3    " href="https://mohsen0321.github.io/Mohsen-Khaled/#about">About</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link p-2 p-lg-3   " href="https://mohsen0321.github.io/Mohsen-Khaled/#Experience">Experience  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 p-lg-3   " href="https://mohsen0321.github.io/Mohsen-Khaled/projects/projects.html">Projects</a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+        <div class="contact">
+            <div class="container  ">
+                <div class="text ">
+                    
+                    <h1 class="position-relative">Contact <span class="me">Me</span>   Now ! <i class="call  fa-solid fa-phone-volume"></i></h1>
+                    <p class="user-profession"><span class="user-profession1"></span></p>
+                </div>
+                <div class="img">
+                    <img src="imgs/contact.png" alt="">
+                </div>
+
+                <form >
+                    <input  type="text"  placeholder="your Name"  required  minlength="6" id="name">
+                    <input  type="email"    placeholder="Your mail"  required     id="email">
+                    <textarea name="" id="message" cols="32" rows="5" placeholder="Your Message" required></textarea>
+                    <button onclick="SendMail()" type="submit">Submit</button>
+                    <div class="icona">
+                        <ul >
+                          <li>
+                            <a target="_blank"    href="https://www.facebook.com/share/syHHoxPAZiVDwwdn/?mibextid=qi2Omg"><i class="fa-brands fa-facebook"></i></a>
+                            <a target="_blank"   href="https://youtube.com/@engmohsenkhaled6482?si=XD2Ebw3V9PqLXxNg"><i class="fa-brands fa-youtube"></i></a>
+                            <a target="_blank"  href="https://www.linkedin.com/in/mohsen-khaled-189582203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                            <a target="_blank"  href="mailto:mohsenkhaled000@gmail.com"><i class="fa-solid fa-envelope"></i> </a>
+                            <a target="_blank"  href="https://wa.me/+0201550019832"><i class="fa-brands fa-whatsapp"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                </form>
+                       
+            </div>
+          
+          
+            <div class="footer">
+             <h6>Developed and powered by
+             <span class="mohsen"><i class="fa-regular fa-copyright"></i>      Mohsen Khaled</span> </h6>
+             </div>
+        </div>
+
+
+
+
+
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/all.min.js"></script>
+      <script src="main.js"></script>
+ 
+</body>
+</html>
